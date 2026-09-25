@@ -1,18 +1,89 @@
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
 body {
-    font-family: Arial;
-    background-color: #f2f2f2;
-    text-align: center;
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg, #0073e6, #00c6ff);
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .container {
-    margin-top: 100px;
+width: 100%;
+padding: 20px;
+}
+
+.card {
+max-width: 700px;
+margin: auto;
+background-color: white;
+padding: 50px 40px;
+border-radius: 20px;
+text-align: center;
+box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+font-size: 55px;
+margin-bottom: 15px;
 }
 
 h1 {
-    color: #0073e6;
+color: #0073e6;
+font-size: 36px;
+margin-bottom: 15px;
+}
+
+h2 {
+color: #333;
+font-size: 24px;
+margin-bottom: 15px;
+}
+
+p {
+color: #666;
+font-size: 18px;
+line-height: 1.6;
+}
+
+.pipeline {
+margin: 30px 0;
+padding: 18px;
+background-color: #f2f8ff;
+border-radius: 10px;
+color: #0073e6;
+font-weight: bold;
+font-size: 16px;
+}
+
+.pipeline span {
+margin: 0 6px;
 }
 
 button {
-    padding: 12px 25px;
-    font-size: 18px;
+background-color: #0073e6;
+color: white;
+border: none;
+padding: 14px 30px;
+font-size: 18px;
+border-radius: 8px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+button:hover {
+background-color: #005bb5;
+transform: scale(1.05);
+}
+
+.status {
+margin-top: 25px;
+color: #28a745;
+font-weight: bold;
+font-size: 17px;
 }
